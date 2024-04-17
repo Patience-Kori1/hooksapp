@@ -1,4 +1,4 @@
-.App {
+#App {
   text-align: center;
 }
 
@@ -26,6 +26,22 @@
 
 .App-link {
   color: #61dafb;
+}
+#listeToDo {
+  width : 50%;
+  margin : auto ;
+ 
+}
+
+#listTodo {
+  width:400px ;
+  border : solid 1px black ;
+  margin: auto;
+}
+
+#formTodo {
+  width: 500px;
+  margin:auto
 }
 
 @keyframes App-logo-spin {

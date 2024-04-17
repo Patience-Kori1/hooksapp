@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {v4 as uuidv4} from 'uuid';
+import Todo from './components/Todo';
+import AddTodoForm from './components/AddToDoForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div  id="App">
+      <h1>To do List</h1>
+     
+      <Todo></Todo>
+      <AddTodoForm></AddTodoForm>
     </div>
   );
 }
