@@ -10,7 +10,7 @@ function App() {
       <h1>To do List</h1>
      
       <Todo></Todo>
-      <AddTodoForm></AddTodoForm>
+      
     </div>
   );
 }
