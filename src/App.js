@@ -1,14 +1,34 @@
-
+import React, { Component } from 'react';
 import './App.css';
-import {v4 as uuidv4} from 'uuid';
+import Profile from './components/Profile';
+import { UserContext, ColorContext } from './components/MyContext';
+import Patience from './components/Patience';
 
+export class App extends Component {
+  state = {
+    user : {
+      name: "Lisa",
+      age: 32,
+  }
+  
+  }
+  render() {
+    return (
+      <div  id="App"style = {{backgroundColor: ' rgb(248, 225, 186)', width: '800px', margin:'5px auto', padding:'10px', marginTop: '50px'}}>
 
-function App() {
-  return (
-    <div  id="App">
-          
+      <h1> App </h1>
+      <Patience></Patience>
+        <UserContext.Provider value={this.state.user}>
+          <ColorContext.Provider value="red" >
+            <Profile> </Profile>
+          </ColorContext.Provider>
+        </UserContext.Provider>
+       
+         
     </div>
-  );
+    )
+  }
 }
 
-export default App;
+export default App
+
