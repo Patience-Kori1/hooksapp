@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Profile from './components/Profile';
-import { UserContext, ColorContext } from './components/MyContext';
-import Patience from './components/Patience';
+import Count from './components/Count';
+import CountBis from './components/TestPatience';
 
 export class App extends Component {
   state = {
@@ -16,13 +15,9 @@ export class App extends Component {
     return (
       <div  id="App"style = {{backgroundColor: ' rgb(248, 225, 186)', width: '800px', margin:'5px auto', padding:'10px', marginTop: '50px'}}>
 
-      <h1> App </h1>
-      <Patience></Patience>
-        <UserContext.Provider value={this.state.user}>
-          <ColorContext.Provider value="red" >
-            <Profile> </Profile>
-          </ColorContext.Provider>
-        </UserContext.Provider>
+      <h1> Test </h1>
+        <Count> </Count>
+        <CountBis ></CountBis>
        
          
     </div>

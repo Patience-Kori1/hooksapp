@@ -10,7 +10,7 @@ function ContentData() {
         <div style={{color:color}}>
             <ul>
                 <li> Nom :  {user.name} </li>
-                <li> Nom :  {user.age} </li>
+                <li> Age :  {user.age} </li>
             </ul>
         </div>
     )
